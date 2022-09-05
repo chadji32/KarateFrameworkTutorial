@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/configuration\/getRequest[1:8]","start":1662358950994,"end":1662358951005,"title":"com\/api\/automation\/configuration\/getRequest[1:8] 09:22:30.994-09:22:31.005 To get all the data from application in JSON format"},{"id":2,"group":1,"content":"com\/api\/automation\/configuration\/getRequest[2:15]","start":1662358951009,"end":1662358951020,"title":"com\/api\/automation\/configuration\/getRequest[2:15] 09:22:31.009-09:22:31.020 To get all the data from application in JSON format using path variable"},{"id":3,"group":1,"content":"com\/api\/automation\/configuration\/getRequest[3:23]","start":1662358951026,"end":1662358951045,"title":"com\/api\/automation\/configuration\/getRequest[3:23] 09:22:31.026-09:22:31.045 To get all the data from application in JSON format using path variable"},{"id":4,"group":1,"content":"com\/api\/automation\/configuration\/getGlobalConfig[1:7]","start":1662358949225,"end":1662358949398,"title":"com\/api\/automation\/configuration\/getGlobalConfig[1:7] 09:22:29.225-09:22:29.398 To get the value of username and password from karate-config.js"},{"id":5,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[1:7]","start":1662358950033,"end":1662358950494,"title":"com\/api\/automation\/configuration\/createJobEntry[1:7] 09:22:30.033-09:22:30.494 To create the Job Entry in JSON fromat"},{"id":6,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[2:16]","start":1662358950503,"end":1662358950599,"title":"com\/api\/automation\/configuration\/createJobEntry[2:16] 09:22:30.503-09:22:30.599 To create the Job Entry using XML requests body format"},{"id":7,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[3:25]","start":1662358950605,"end":1662358950656,"title":"com\/api\/automation\/configuration\/createJobEntry[3:25] 09:22:30.605-09:22:30.656 To create the Job Entry using XML requests body format"},{"id":8,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[4:34]","start":1662358950674,"end":1662358950698,"title":"com\/api\/automation\/configuration\/createJobEntry[4:34] 09:22:30.674-09:22:30.698 To create the Job Entry in JSON fromat"},{"id":9,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[5:44]","start":1662358950703,"end":1662358950724,"title":"com\/api\/automation\/configuration\/createJobEntry[5:44] 09:22:30.703-09:22:30.724 To create the Job Entry using XML requests body format"},{"id":10,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[6:54]","start":1662358950731,"end":1662358950747,"title":"com\/api\/automation\/configuration\/createJobEntry[6:54] 09:22:30.731-09:22:30.747 To create the Job Entry in JSON fromat with embedded expression"},{"id":11,"group":1,"content":"com\/api\/automation\/configuration\/createJobEntry[7:64]","start":1662358950753,"end":1662358950768,"title":"com\/api\/automation\/configuration\/createJobEntry[7:64] 09:22:30.753-09:22:30.768 To create the Job Entry using XML requests body format"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

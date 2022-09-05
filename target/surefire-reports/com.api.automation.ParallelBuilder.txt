@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.api.automation.ParallelBuilder
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.971 s <<< FAILURE! - in com.api.automation.ParallelBuilder
+executeKarateTest  Time elapsed: 8.958 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: There are Some Failed Scenarios ==> expected: <0> but was: <9>
+	at com.api.automation.ParallelBuilder.executeKarateTest(ParallelBuilder.java:20)
+

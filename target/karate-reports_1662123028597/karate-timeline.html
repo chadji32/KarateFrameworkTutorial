@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[1:7]","start":1662122903367,"end":1662122903386,"title":"com\/api\/automation\/putrequest\/updateJobEntry[1:7] 15:48:23.367-15:48:23.386 To update the Job Entry for exiting job in JSON format"},{"id":2,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[2:60]","start":1662122903391,"end":1662122903400,"title":"com\/api\/automation\/putrequest\/updateJobEntry[2:60] 15:48:23.391-15:48:23.400 To update the Job Entry for exiting job in JSON format"},{"id":3,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[3:110]","start":1662122903405,"end":1662122903424,"title":"com\/api\/automation\/putrequest\/updateJobEntry[3:110] 15:48:23.405-15:48:23.424 To update the Job Entry for exiting job in JSON format by calling another feature file"},{"id":4,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[4:155]","start":1662122903429,"end":1662122903448,"title":"com\/api\/automation\/putrequest\/updateJobEntry[4:155] 15:48:23.429-15:48:23.448 To update the Job Entry for exiting job in JSON format by calling another feature file"},{"id":5,"group":1,"content":"com\/api\/automation\/putrequest\/updateJobEntry[5:203]","start":1662122903453,"end":1662122903473,"title":"com\/api\/automation\/putrequest\/updateJobEntry[5:203] 15:48:23.453-15:48:23.473 To update the Job Entry for exiting job in JSON format by calling another feature file with cariable"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
