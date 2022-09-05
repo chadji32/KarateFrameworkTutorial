@@ -25,7 +25,7 @@ public class ParallelBuilderWithCucumberReport {
 //		Results result = aRunner.parallel(5);
 //		@Test
 //	    void testParallel() {
-		Results result = Runner.path("classpath:com/api/automation").tags("~@skipme").outputCucumberJson(true).parallel(5);
+		Results result = Runner.path("classpath:com/api/automation").outputCucumberJson(true).parallel(5);
 		System.out.println("Total Feature => " + result.getFeaturesTotal());
 		System.out.println("Total Scenarion => " + result.getScenariosTotal());
 		System.out.println("Passed Scenarios => " + result.getScenariosPassed());

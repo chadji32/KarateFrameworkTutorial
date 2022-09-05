@@ -1,3 +1,4 @@
+@ignore
 Feature: To create the Job entry in the test application
   Helper file for Post /normal/webapi/add
 

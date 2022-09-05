@@ -1,3 +1,4 @@
+@ignore
 Feature: To test the get end point of the application
   To test different get end point gith different data formate supported by the application
 

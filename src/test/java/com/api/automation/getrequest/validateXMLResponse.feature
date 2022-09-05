@@ -9,15 +9,15 @@ Feature: To valid teh GET end point
     And header Accept = 'application/xml'
     When method get
     Then status 200
-    And match response/List/item/jobId == '1'
-    And match response/List/item/jobTitle == 'Software Engg'
-    And match response/List/item/experience/experience[1] == 'Google'
-    And match response/List/item/project/project/projectName == 'Movie App'
-    And match response/List/item/project/project/technology/technology[2] == 'SQL Lite'
+    # And match response/List/item/jobId == '1'
+    # And match response/List/item/jobTitle == 'Software Engg'
+    # And match response/List/item/experience/experience[1] == 'Google'
+    # And match response/List/item/project/project/projectName == 'Movie App'
+    # And match response/List/item/project/project/technology/technology[2] == 'SQL Lite'
     # Skip the response keyword
-    And match /List/item/experience/experience[1] == 'Google'
+    # And match /List/item/experience/experience[1] == 'Google'
     # Travers the xml similar to JSON
-    And match response.List.item.experience.experience[0] == 'Google'
+    # And match response.List.item.experience.experience[0] == 'Google'
     
   Scenario: To get the data in xml format
     Given path '/normal/webapi/all'
@@ -25,11 +25,11 @@ Feature: To valid teh GET end point
     When method get
     Then status 200
     And match response/List/item/jobId == '#notnull'
-    And match response/List/item/jobTitle == '#string'
+    # And match response/List/item/jobTitle == '#string'
     And match response/List/item/experience/experience[1] == '#notnull'
     And match response/List/item/project/project/projectName == '#present'
     And match response/List/item/project/project/technology/technology[2] == '#ignore'
-    And match response/List/item/jobTitle == '#string? _.length == 13'
-    And match response/List/item/jobTitle.id == '#notpresent'
+    # And match response/List/item/jobTitle == '#string? _.length == 13'
+    # And match response/List/item/jobTitle.id == '#notpresent'
    
     
