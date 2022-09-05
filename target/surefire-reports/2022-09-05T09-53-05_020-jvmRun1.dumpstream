@@ -1,0 +1,2006 @@
+# Created at 2022-09-05T09:53:10.959
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-09-05T09:53:11.467
+Unexpected IOException with stream: 09:53:11.014 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/upload
+1 > Content-Type: multipart/form-data; boundary=c1b9d996dae6021d
+1 > Content-Length: 520
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+
+Mixed: content-disposition: form-data; name="file"; filename="jobEntry.json"
+content-type: application/json; charset=UTF-8
+content-length: 335
+Completed: true
+IsInMemory: true
+
+
+
+
+# Created at 2022-09-05T09:53:11.469
+Unexpected IOException with stream: 09:53:11.014 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 5,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.478
+Unexpected IOException with stream: 09:53:11.477 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.486
+Unexpected IOException with stream: 09:53:11.485 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/xml
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 508
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>6</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+
+
+# Created at 2022-09-05T09:53:11.504
+Unexpected IOException with stream: 09:53:11.503 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/xml
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+<Job><jobId>6</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></Job>
+
+
+
+# Created at 2022-09-05T09:53:11.510
+Unexpected IOException with stream: 09:53:11.507 [pool-1-thread-4] INFO  com.intuit.karate - [print] <Job>
+  <jobId>6</jobId>
+  <jobTitle>Software Engg - 2</jobTitle>
+  <jobDescription>To develop andriod application</jobDescription>
+  <experience>
+    <experience>Google</experience>
+    <experience>Apple</experience>
+    <experience>Mobile Iron</experience>
+    <experience>Subex</experience>
+  </experience>
+  <project>
+    <project>
+      <projectName>Movie App</projectName>
+      <technology>
+        <technology>Kotlin</technology>
+        <technology>SQL Lite</technology>
+        <technology>Gradle</technology>
+        <technology>Jenkins</technology>
+      </technology>
+    </project>
+  </project>
+</Job>
+ 
+
+
+# Created at 2022-09-05T09:53:11.513
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/createJobEntry.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.6349
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:11.514
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:11.516
+Unexpected IOException with stream: 09:53:11.515 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 31 (30 remaining) classpath:com/api/automation/createJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:11.518
+Unexpected IOException with stream: 09:53:11.517 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.526
+Unexpected IOException with stream: 09:53:11.525 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 240
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":4,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.537
+Unexpected IOException with stream: 09:53:11.536 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":4,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.541
+Unexpected IOException with stream: 09:53:11.540 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 4,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.547
+Unexpected IOException with stream: 09:53:11.546 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.558
+Unexpected IOException with stream: 09:53:11.556 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 594
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+<item>
+	<jobId>5</jobId>
+	<jobTitle>Software Engg - 2</jobTitle>
+	<jobDescription>To develop andriod application</jobDescription>
+	<experience>
+		<experience>Google</experience>
+		<experience>Apple</experience>
+		<experience>Mobile Iron</experience>
+		<experience>Subex</experience>
+	</experience>
+	<project>
+		<project>
+			<projectName>Movie App</projectName>
+			<technology>
+				<technology>Kotlin</technology>
+				<technology>SQL Lite</technology>
+				<technology>Gradle</technology>
+				<technology>Jenkins</technology>
+			</technology>
+		</project>
+	</project>
+</item>
+
+
+
+# Created at 2022-09-05T09:53:11.569
+Unexpected IOException with stream: 09:53:11.568 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.571
+Unexpected IOException with stream: 09:53:11.569 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 5,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.577
+Unexpected IOException with stream: 09:53:11.576 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.584
+Unexpected IOException with stream: 09:53:11.583 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":93,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.595
+Unexpected IOException with stream: 09:53:11.594 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":93,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.599
+Unexpected IOException with stream: 09:53:11.597 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 93,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.604
+Unexpected IOException with stream: 09:53:11.603 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.613
+Unexpected IOException with stream: 09:53:11.612 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 509
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>48</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+
+
+# Created at 2022-09-05T09:53:11.627
+Unexpected IOException with stream: 09:53:11.625 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":48,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.630
+Unexpected IOException with stream: 09:53:11.629 [pool-1-thread-4] INFO  com.intuit.karate - [print] {
+  "jobId": 48,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.637
+Unexpected IOException with stream: 09:53:11.636 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.650
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/createJobEntryWithVariables.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 0.0317
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:11.652
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:11.654
+Unexpected IOException with stream: 09:53:11.653 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 31 (29 remaining) classpath:com/api/automation/createJobEntryWithVariables.feature
+
+
+# Created at 2022-09-05T09:53:11.656
+Unexpected IOException with stream: 09:53:11.653 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.659
+Unexpected IOException with stream: 09:53:11.658 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.662
+Unexpected IOException with stream: 09:53:11.661 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  31 
+
+
+# Created at 2022-09-05T09:53:11.666
+Unexpected IOException with stream: 09:53:11.664 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 197
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"File FileToUpload.txt uploaded at C:\\Users\\CHRIST~1\\AppData\\Local\\Temp\\\\"}
+
+
+
+# Created at 2022-09-05T09:53:11.668
+Unexpected IOException with stream: 09:53:11.667 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":31,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.670
+Unexpected IOException with stream: 09:53:11.669 [pool-1-thread-5] INFO  com.intuit.karate - [print] {
+  "message": "File FileToUpload.txt uploaded at C:\\Users\\CHRIST~1\\AppData\\Local\\Temp\\\\"
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.676
+Unexpected IOException with stream: 09:53:11.675 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.683
+Unexpected IOException with stream: 09:53:11.682 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":31,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.692
+Unexpected IOException with stream: 09:53:11.687 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.693
+Unexpected IOException with stream: 09:53:11.688 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > DELETE http://localhost:9897/normal/webapi/remove/31
+2 > Accept: application/json
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.695
+Unexpected IOException with stream: 09:53:11.694 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.698
+Unexpected IOException with stream: 09:53:11.697 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  67 
+
+
+# Created at 2022-09-05T09:53:11.704
+Unexpected IOException with stream: 09:53:11.703 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":67,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.713
+Unexpected IOException with stream: 09:53:11.712 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":67,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.717
+Unexpected IOException with stream: 09:53:11.716 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 22
+2 < 200
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"jobId":31,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.723
+Unexpected IOException with stream: 09:53:11.722 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:9897/normal/webapi/find?jobTitle=Software+Engg+-+2&id=31
+3 > Accept: application/json
+3 > Host: localhost:9897
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.726
+Unexpected IOException with stream: 09:53:11.723 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > DELETE http://localhost:9897/normal/webapi/remove/67
+2 > Accept: application/json
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.732
+Unexpected IOException with stream: 09:53:11.731 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 7
+3 < 404
+3 < X-Content-Type-Options: nosniff
+3 < X-XSS-Protection: 1; mode=block
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Pragma: no-cache
+3 < Expires: 0
+3 < X-Frame-Options: DENY
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+3 < Keep-Alive: timeout=60
+3 < Connection: keep-alive
+{"message":"Failed to find job with id=31, jobTitle=Software Engg - 2"}
+
+
+
+# Created at 2022-09-05T09:53:11.739
+Unexpected IOException with stream: 09:53:11.737 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.741
+Unexpected IOException with stream: 09:53:11.740 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 13
+2 < 200
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"jobId":67,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.744
+Unexpected IOException with stream: 09:53:11.744 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+3 > DELETE http://localhost:9897/normal/webapi/remove/67
+3 > Accept: application/json
+3 > Host: localhost:9897
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.747
+Unexpected IOException with stream: 09:53:11.746 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.749
+Unexpected IOException with stream: 09:53:11.748 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.751
+Unexpected IOException with stream: 09:53:11.750 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  77 
+
+
+# Created at 2022-09-05T09:53:11.757
+Unexpected IOException with stream: 09:53:11.756 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":77,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.764
+Unexpected IOException with stream: 09:53:11.763 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 18
+3 < 404
+3 < X-Content-Type-Options: nosniff
+3 < X-XSS-Protection: 1; mode=block
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Pragma: no-cache
+3 < Expires: 0
+3 < X-Frame-Options: DENY
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+3 < Keep-Alive: timeout=60
+3 < Connection: keep-alive
+{"message":"Entry with id = 67 not found"}
+
+
+
+# Created at 2022-09-05T09:53:11.768
+Unexpected IOException with stream: 09:53:11.767 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":77,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.773
+Unexpected IOException with stream: 09:53:11.771 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.777
+Unexpected IOException with stream: 09:53:11.776 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > PATCH http://localhost:9897/normal/webapi/update/details?jobTitle=Software+Engg+-+2&jobDescription=To+develop+adroid+application+and+web+application&id=77
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+
+
+# Created at 2022-09-05T09:53:11.787
+Unexpected IOException with stream: 09:53:11.785 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.790
+Unexpected IOException with stream: 09:53:11.788 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.791
+Unexpected IOException with stream: 09:53:11.789 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 10
+2 < 200
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"jobId":77,"jobTitle":"Software Engg - 2","jobDescription":"To develop adroid application and web application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.795
+Unexpected IOException with stream: 09:53:11.791 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  43 
+
+
+# Created at 2022-09-05T09:53:11.797
+Unexpected IOException with stream: 09:53:11.792 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'jobId' with new value: response.jobId
+
+
+# Created at 2022-09-05T09:53:11.798
+Unexpected IOException with stream: 09:53:11.794 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 326
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"message":"File jobEntry.json uploaded at C:\\Users\\CHRIST~1\\AppData\\Local\\Temp\\\\"}
+
+
+
+# Created at 2022-09-05T09:53:11.799
+Unexpected IOException with stream: 09:53:11.798 [pool-1-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'jobTitle' with new value: response.jobTitle
+
+
+# Created at 2022-09-05T09:53:11.801
+Unexpected IOException with stream: 09:53:11.800 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "message": "File jobEntry.json uploaded at C:\\Users\\CHRIST~1\\AppData\\Local\\Temp\\\\"
+}
+ 
+
+
+# Created at 2022-09-05T09:53:11.802
+Unexpected IOException with stream: 09:53:11.801 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:9897/normal/webapi/find?jobTitle=Software+Engg+-+2&id=77
+3 > Accept: application/json
+3 > Host: localhost:9897
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.809
+Unexpected IOException with stream: 09:53:11.807 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.813
+Unexpected IOException with stream: 09:53:11.812 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 9
+3 < 200
+3 < X-Content-Type-Options: nosniff
+3 < X-XSS-Protection: 1; mode=block
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Pragma: no-cache
+3 < Expires: 0
+3 < X-Frame-Options: DENY
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+3 < Keep-Alive: timeout=60
+3 < Connection: keep-alive
+{"jobId":77,"jobTitle":"Software Engg - 2","jobDescription":"To develop adroid application and web application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.821
+Unexpected IOException with stream: 09:53:11.819 [pool-1-thread-3] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.823
+Unexpected IOException with stream: 09:53:11.822 [pool-1-thread-3] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.826
+Unexpected IOException with stream: 09:53:11.799 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":43,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.828
+Unexpected IOException with stream: 09:53:11.821 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.829
+Unexpected IOException with stream: 09:53:11.826 [pool-1-thread-3] INFO  com.intuit.karate - [print] Helper ==>  19 
+
+
+# Created at 2022-09-05T09:53:11.833
+Unexpected IOException with stream: 09:53:11.832 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":19,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.836
+Unexpected IOException with stream: 09:53:11.835 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.840
+Unexpected IOException with stream: 09:53:11.838 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.841
+Unexpected IOException with stream: 09:53:11.840 [pool-1-thread-4] INFO  com.intuit.karate - [print] Helper ==>  95 
+
+
+# Created at 2022-09-05T09:53:11.845
+Unexpected IOException with stream: 09:53:11.844 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":95,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.850
+Unexpected IOException with stream: 09:53:11.849 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 15
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":19,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.855
+Unexpected IOException with stream: 09:53:11.853 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 26
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":43,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.857
+Unexpected IOException with stream: 09:53:11.856 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:9897/normal/webapi/find?jobTitle=Software+Engg+-+2&id=84835
+2 > Accept: application/json
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.860
+Unexpected IOException with stream: 09:53:11.859 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:9897/normal/webapi/find?jobTitle=Software+Engg+-+2&id=43
+2 > Accept: application/json
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:11.866
+Unexpected IOException with stream: 09:53:11.865 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 19
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":95,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.869
+Unexpected IOException with stream: 09:53:11.868 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 10
+2 < 404
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"message":"Failed to find job with id=84835, jobTitle=Software Engg - 2"}
+
+
+
+# Created at 2022-09-05T09:53:11.873
+Unexpected IOException with stream: 09:53:11.872 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > PATCH http://localhost:9897/normal/webapi/update/details?jobTitle=Software+Engg+-+2&jobDescription=To+develop+adroid+application+and+web+application&id=95
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+
+
+# Created at 2022-09-05T09:53:11.875
+Unexpected IOException with stream: 09:53:11.872 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 11
+2 < 200
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"jobId":43,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.876
+Unexpected IOException with stream: 09:53:11.874 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.880
+Unexpected IOException with stream: 09:53:11.879 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: staging 
+
+
+# Created at 2022-09-05T09:53:11.883
+Unexpected IOException with stream: 09:53:11.882 [pool-1-thread-3] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.885
+Unexpected IOException with stream: 09:53:11.884 [pool-1-thread-3] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.887
+Unexpected IOException with stream: 09:53:11.886 [pool-1-thread-3] INFO  com.intuit.karate - [print] Helper ==>  24 
+
+
+# Created at 2022-09-05T09:53:11.889
+Unexpected IOException with stream: 09:53:11.886 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  http://localhost:9897 
+
+
+# Created at 2022-09-05T09:53:11.891
+Unexpected IOException with stream: 09:53:11.890 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":24,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.893
+Unexpected IOException with stream: 09:53:11.891 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  /normal/webapi/add 
+
+
+# Created at 2022-09-05T09:53:11.895
+Unexpected IOException with stream: 09:53:11.894 [pool-1-thread-5] INFO  com.intuit.karate - [print] Helper ==>  45 
+
+
+# Created at 2022-09-05T09:53:11.897
+Unexpected IOException with stream: 09:53:11.896 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 23
+2 < 200
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"jobId":95,"jobTitle":"Software Engg - 2","jobDescription":"To develop adroid application and web application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.899
+Unexpected IOException with stream: 09:53:11.897 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":45,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.903
+Unexpected IOException with stream: 09:53:11.901 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":24,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.909
+Unexpected IOException with stream: 09:53:11.908 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":45,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+
+
+# Created at 2022-09-05T09:53:11.911
+Unexpected IOException with stream: 09:53:11.909 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > PATCH http://localhost:9897/normal/webapi/update/details?jobTitle=Software+Engg+-+2&jobDescription=To+develop+adroid+application+and+web+application&id=-1
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+
+
+# Created at 2022-09-05T09:53:11.915
+Unexpected IOException with stream: 09:53:11.914 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > PATCH http://localhost:9897/normal/webapi/update/details?jobDescription=To+develop+adroid+application+and+web+application&id=45
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 2
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+{}
+
+
+
+# Created at 2022-09-05T09:53:11.919
+Unexpected IOException with stream: 09:53:11.918 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 7
+2 < 404
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"message":"Failed to find job with id=-1"}
+
+
+
+# Created at 2022-09-05T09:53:11.934
+Unexpected IOException with stream: 09:53:11.933 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 17
+2 < 400
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:11 GMT
+2 < Connection: close
+{"timestamp":"2022-09-05T06:53:11.924+0000","status":400,"error":"Bad Request","message":"Required String parameter 'jobTitle' is not present","path":"/normal/webapi/update/details"}
+
+
+
+# Created at 2022-09-05T09:53:12.028
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/configuration/createJobEntry.feature
+scenarios:  7 | passed:  0 | failed:  7 | time: 2.6345
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.029
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.029
+Unexpected IOException with stream: 09:53:12.029 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 31 (27 remaining) classpath:com/api/automation/configuration/createJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:12.094
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/configuration/getGlobalConfig.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.0094
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.095
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.096
+Unexpected IOException with stream: 09:53:12.095 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 31 (26 remaining) classpath:com/api/automation/configuration/getGlobalConfig.feature
+
+
+# Created at 2022-09-05T09:53:12.182
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/configuration/getRequest.feature
+scenarios:  3 | passed:  0 | failed:  3 | time: 0.0245
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.183
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.185
+Unexpected IOException with stream: 09:53:12.184 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 6 of 31 (25 remaining) classpath:com/api/automation/configuration/getRequest.feature
+
+
+# Created at 2022-09-05T09:53:12.476
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/deleterequest/deleteJobEntry.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 0.7602
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.478
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.479
+Unexpected IOException with stream: 09:53:12.478 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 31 (24 remaining) classpath:com/api/automation/deleterequest/deleteJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:12.548
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/getRequest.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 0.1228
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.549
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.550
+Unexpected IOException with stream: 09:53:12.549 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 8 of 31 (23 remaining) classpath:com/api/automation/getrequest/getRequest.feature
+
+
+# Created at 2022-09-05T09:53:12.620
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/getRequest2.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.0000
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.621
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.623
+Unexpected IOException with stream: 09:53:12.621 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 9 of 31 (22 remaining) classpath:com/api/automation/getrequest/getRequest2.feature
+
+
+# Created at 2022-09-05T09:53:12.673
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/jsonPathExpression.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.4011
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.674
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.676
+Unexpected IOException with stream: 09:53:12.675 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 10 of 31 (21 remaining) classpath:com/api/automation/getrequest/jsonPathExpression.feature
+
+
+# Created at 2022-09-05T09:53:12.772
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/responseMatcher.feature
+scenarios:  3 | passed:  1 | failed:  2 | time: 0.4630
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.773
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.774
+Unexpected IOException with stream: 09:53:12.773 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 11 of 31 (20 remaining) classpath:com/api/automation/getrequest/responseMatcher.feature
+
+
+# Created at 2022-09-05T09:53:12.852
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/validateJSONArray.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.3725
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.854
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.855
+Unexpected IOException with stream: 09:53:12.855 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 12 of 31 (19 remaining) classpath:com/api/automation/getrequest/validateJSONArray.feature
+
+
+# Created at 2022-09-05T09:53:12.909
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/validateXMLResponse.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.4235
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.911
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.912
+Unexpected IOException with stream: 09:53:12.911 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 13 of 31 (18 remaining) classpath:com/api/automation/getrequest/validateXMLResponse.feature
+
+
+# Created at 2022-09-05T09:53:12.963
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/ValidationUsingFile.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.1648
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:12.964
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:12.964
+Unexpected IOException with stream: 09:53:12.964 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 14 of 31 (17 remaining) classpath:com/api/automation/getrequest/ValidationUsingFile.feature
+
+
+# Created at 2022-09-05T09:53:13.015
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/Variables.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.1118
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.016
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.017
+Unexpected IOException with stream: 09:53:13.016 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 15 of 31 (16 remaining) classpath:com/api/automation/getrequest/Variables.feature
+
+
+# Created at 2022-09-05T09:53:13.102
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/ignore/getRequest.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.0655
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.103
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.105
+Unexpected IOException with stream: 09:53:13.103 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 16 of 31 (15 remaining) classpath:com/api/automation/getrequest/ignore/getRequest.feature
+
+
+# Created at 2022-09-05T09:53:13.191
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/getrequest/queryparameters/queryParameter.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.2531
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.193
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.194
+Unexpected IOException with stream: 09:53:13.193 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 18 of 31 (13 remaining) classpath:com/api/automation/getrequest/queryparameters/queryParameter.feature
+
+
+# Created at 2022-09-05T09:53:13.333
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/patchrequest/updateJobDescritpion.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 0.4059
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.333
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.334
+Unexpected IOException with stream: 09:53:13.333 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 19 of 31 (12 remaining) classpath:com/api/automation/patchrequest/updateJobDescritpion.feature
+
+
+# Created at 2022-09-05T09:53:13.410
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/createJobEntry.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 0.2781
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.411
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.412
+Unexpected IOException with stream: 09:53:13.412 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 20 of 31 (11 remaining) classpath:com/api/automation/postrequest/createJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:13.446
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/javaScriptExecutor.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.0096
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.447
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.447
+Unexpected IOException with stream: 09:53:13.447 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 21 of 31 (10 remaining) classpath:com/api/automation/postrequest/javaScriptExecutor.feature
+
+
+# Created at 2022-09-05T09:53:13.504
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/schemaValidation.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.2309
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.507
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.508
+Unexpected IOException with stream: 09:53:13.507 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 22 of 31 (9 remaining) classpath:com/api/automation/postrequest/schemaValidation.feature
+
+
+# Created at 2022-09-05T09:53:13.577
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/datadriven/postDataDriven.feature
+scenarios:  9 | passed:  9 | failed:  0 | time: 0.6155
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.578
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.578
+Unexpected IOException with stream: 09:53:13.578 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 23 of 31 (8 remaining) classpath:com/api/automation/postrequest/datadriven/postDataDriven.feature
+
+
+# Created at 2022-09-05T09:53:13.614
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/fileUpload/fileUpload.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 2.4667
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.614
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.615
+Unexpected IOException with stream: 09:53:13.615 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 24 of 31 (7 remaining) classpath:com/api/automation/postrequest/fileUpload/fileUpload.feature
+
+
+# Created at 2022-09-05T09:53:13.737
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/putrequest/updateJobEntry.feature
+scenarios:  5 | passed:  4 | failed:  1 | time: 0.4336
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.740
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.741
+Unexpected IOException with stream: 09:53:13.740 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 25 of 31 (6 remaining) classpath:com/api/automation/putrequest/updateJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:13.779
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/secure/getrequest/secureGetRequest.feature
+scenarios:  4 | passed:  4 | failed:  0 | time: 0.6148
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:13.779
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:13.779
+Unexpected IOException with stream: 09:53:13.779 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 26 of 31 (5 remaining) classpath:com/api/automation/secure/getrequest/secureGetRequest.feature
+
+
+# Created at 2022-09-05T09:53:27.954
+Unexpected IOException with stream: 09:53:27.953 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 17037
+1 < 401
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Content-Type-Options: nosniff
+1 < X-Xss-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 05 Sep 2022 06:53:27 GMT
+1 < Via: 1.1 vegur
+{"timestamp":"2022-09-05T06:53:27.862+0000","status":401,"error":"Unauthorized","message":"Unauthorized","path":"/auth/webapi/all"}
+
+
+
+# Created at 2022-09-05T09:53:28.047
+Unexpected IOException with stream: 09:53:28.046 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 17166
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Content-Type-Options: nosniff
+1 < X-Xss-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Content-Length: 31
+1 < Date: Mon, 05 Sep 2022 06:53:27 GMT
+1 < Via: 1.1 vegur
+John Wick register successfully
+
+
+
+# Created at 2022-09-05T09:53:28.052
+Unexpected IOException with stream: 09:53:28.051 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://jobapplicationjwt.herokuapp.com/users/authenticate
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 52
+2 > Host: jobapplicationjwt.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+2 > Accept-Encoding: gzip,deflate
+{"username":"John Wick","password":"Guns and Bikes"}
+
+
+
+# Created at 2022-09-05T09:53:28.923
+Unexpected IOException with stream: 09:53:28.922 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 869
+2 < 200
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < Vary: Origin
+2 < Vary: Access-Control-Request-Method
+2 < Vary: Access-Control-Request-Headers
+2 < X-Content-Type-Options: nosniff
+2 < X-Xss-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Mon, 05 Sep 2022 06:53:27 GMT
+2 < Via: 1.1 vegur
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2huIFdpY2siLCJleHAiOjE2NjIzNjgwMDgsImlhdCI6MTY2MjM2MDgwOH0.QXIW8qeKy3_ymBzY5lZjtAknwHO8BUPqtgt6x0HKtQmLTt-2vrYTA9RbcH6ABLI5qOqaUwbX0U-SWeXViMlWwA"}
+
+
+
+# Created at 2022-09-05T09:53:28.927
+Unexpected IOException with stream: 09:53:28.927 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+3 > GET https://jobapplicationjwt.herokuapp.com/auth/webapi/all
+3 > Accept: application/json
+3 > Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKb2huIFdpY2siLCJleHAiOjE2NjIzNjgwMDgsImlhdCI6MTY2MjM2MDgwOH0.QXIW8qeKy3_ymBzY5lZjtAknwHO8BUPqtgt6x0HKtQmLTt-2vrYTA9RbcH6ABLI5qOqaUwbX0U-SWeXViMlWwA
+3 > Host: jobapplicationjwt.herokuapp.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/18.0.1.1)
+3 > Accept-Encoding: gzip,deflate
+
+
+
+
+# Created at 2022-09-05T09:53:29.611
+Unexpected IOException with stream: 09:53:29.609 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 681
+3 < 200
+3 < Server: Cowboy
+3 < Connection: keep-alive
+3 < X-Content-Type-Options: nosniff
+3 < X-Xss-Protection: 1; mode=block
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Pragma: no-cache
+3 < Expires: 0
+3 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+3 < X-Frame-Options: DENY
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Date: Mon, 05 Sep 2022 06:53:29 GMT
+3 < Via: 1.1 vegur
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
+
+
+
+# Created at 2022-09-05T09:53:29.656
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/secure/getrequest/secureGetWithJWTToken.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 35.7937
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:29.657
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:29.659
+Unexpected IOException with stream: 09:53:29.658 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 27 of 31 (4 remaining) classpath:com/api/automation/secure/getrequest/secureGetWithJWTToken.feature
+
+
+# Created at 2022-09-05T09:53:29.714
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/tags/createJobEntry.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 0.6176
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:29.716
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:29.717
+Unexpected IOException with stream: 09:53:29.717 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 28 of 31 (3 remaining) classpath:com/api/automation/tags/createJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:29.823
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/tags/deleteJobEntry.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 0.2529
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:29.823
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:29.824
+Unexpected IOException with stream: 09:53:29.823 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 29 of 31 (2 remaining) classpath:com/api/automation/tags/deleteJobEntry.feature
+
+
+# Created at 2022-09-05T09:53:29.884
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/tags/queryParameter.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.1612
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:29.886
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:29.887
+Unexpected IOException with stream: 09:53:29.887 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 30 of 31 (1 remaining) classpath:com/api/automation/tags/queryParameter.feature
+
+
+# Created at 2022-09-05T09:53:29.972
+Unexpected IOException with stream: ---------------------------------------------------------
+feature: classpath:com/api/automation/tags/updateJobDescritpion.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 0.1659
+---------------------------------------------------------
+
+
+# Created at 2022-09-05T09:53:29.973
+Unexpected IOException with stream: 
+
+
+# Created at 2022-09-05T09:53:29.973
+Unexpected IOException with stream: 09:53:29.973 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 31 of 31 (0 remaining) classpath:com/api/automation/tags/updateJobDescritpion.feature
+
+
+# Created at 2022-09-05T09:53:30.385
+Unexpected IOException with stream: Karate version: 1.2.0
+
+
+# Created at 2022-09-05T09:53:30.386
+Unexpected IOException with stream: ======================================================
+
+
+# Created at 2022-09-05T09:53:30.386
+Unexpected IOException with stream: elapsed:  23.64 | threads:    5 | thread time: 48.52 
+
+
+# Created at 2022-09-05T09:53:30.387
+Unexpected IOException with stream: features:    29 | skipped:    2 | efficiency: 0.41
+
+
+# Created at 2022-09-05T09:53:30.388
+Unexpected IOException with stream: scenarios:   87 | passed:    69 | failed: 18
+
+
+# Created at 2022-09-05T09:53:30.388
+Unexpected IOException with stream: ======================================================
+
+
+# Created at 2022-09-05T09:53:30.388
+Unexpected IOException with stream: >>> failed features:
+
+
+# Created at 2022-09-05T09:53:30.389
+Unexpected IOException with stream: match failed: EQUALS
+  $ | data types don't match (LIST:STRING)
+  ["1","4","5","6","11","32","4","5","6","51","4","5","6","4","5","43","53","3","45"]
+  '1'
+
+classpath:com/api/automation/getrequest/validateXMLResponse.feature:12
+match failed: EQUALS
+  $ | not a string (LIST:STRING)
+  ["Software Engg","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2","Software Engg - 2"]
+  '#string'
+
+classpath:com/api/automation/getrequest/validateXMLResponse.feature:28
+status code was: 404, expected: 200, response time in milliseconds: 19, url: http://localhost:9897/normal/webapi/update, response: 
+{"message":"Failed to update Entry [jobId=125, jobTitle=Software Engg - 3, jobDescription=To develop andriod application and Web application, experience=[Ljava.lang.Object;@5cddbe1f, project=[[projectName=Movie App, technology=[Kotlin, SQL Lite, Gradle, Jenkins]], [projectName=Web App, technology=[Kotlin, SQL Lite, Gradle, Node Js]]]]"}
+classpath:com/api/automation/putrequest/updateJobEntry.feature:150
+js failed:
+>>>>
+01: _path
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "_path" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:com/api/automation/createJobEntryWithVariables.feature:6
+http call failed after 520 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:11
+http call failed after 404 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:20
+http call failed after 404 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:29
+http call failed after 520 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:39
+http call failed after 5 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:49
+http call failed after 4 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:59
+http call failed after 4 milliseconds for url: http://staging.localhost:9897/normal/webapi/add
+classpath:com/api/automation/configuration/createJobEntry.feature:70
+http call failed after 3 milliseconds for url: http://staging.localhost:9897/normal/webapi/all
+classpath:com/api/automation/configuration/getRequest.feature:12
+http call failed after 4 milliseconds for url: http://staging.localhost:9897/normal/webapi/all
+classpath:com/api/automation/configuration/getRequest.feature:20
+http call failed after 2 milliseconds for url: http://staging.localhost:9897/normal/webapi/all
+classpath:com/api/automation/configuration/getRequest.feature:28
+no step-definition method match found for: the application url 'www.google.com'
+classpath:com/api/automation/getrequest/getRequest2.feature:5
+no step-definition method match found for: the application url 'www.google.com'
+classpath:com/api/automation/getrequest/getRequest2.feature:12
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 20:1 (LIST:LIST)
+  [{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":4,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":6,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":11,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":32,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":4,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":6,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":51,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":4,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":6,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":4,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":43,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":53,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":3,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":45,"jobTitle":"Software Engg - 2","jobDescription":"To develop adroid application and web application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":31,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}]
+  [{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
+
+
+classpath:com/api/automation/getrequest/responseMatcher.feature:13
+match failed: EQUALS
+  / | not equal | match failed for name: 'List' (XML:XML)
+  <List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item><item><jobId>4</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>5</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>6</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>11</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>32</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>4</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>5</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>6</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>51</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>4</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>5</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>6</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>4</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>5</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>43</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>53</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>3</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item><item><jobId>45</jobId><jobTitle>Software Engg - 2</jobTitle><jobDescription>To develop adroid application and web application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item></List>
+  <List>
+<item>
+<jobId>1</jobId>
+<jobTitle>Software Engg</jobTitle>
+<jobDescription>To develop andriod application</jobDescription>
+<experience>
+  <experience>Google</experience>
+  <experience>Apple</experience>
+  <experience>Mobile Iron</experience>
+</experience>
+<project>
+  <project>
+    <projectName>Movie App</projectName>
+    <technology>
+      <technology>Kotlin</technology>
+      <technology>SQL Lite</technology>
+      <technology>Gradle</technology>
+    </technology>
+  </project>
+</project>
+</item>
+</List>
+
+    /List | not equal | match failed for name: 'item' (MAP:MAP)
+    <item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item>
+    <item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item>
+
+      /List/item | data types don't match (LIST:MAP)
+      [{"jobId":"1","jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle"]}}}},{"jobId":"4","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"5","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"6","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"11","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"32","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"4","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"5","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"6","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"51","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"4","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"5","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"6","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"4","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"5","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"43","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"53","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"3","jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}},{"jobId":"45","jobTitle":"Software Engg - 2","jobDescription":"To develop adroid application and web application","experience":{"experience":["Google","Apple","Mobile Iron","Subex"]},"project":{"project":{"projectName":"Movie App","technology":{"technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}}}}]
+      <jobId>1</jobId>
+
+classpath:com/api/automation/getrequest/responseMatcher.feature:45
+
+
+# Created at 2022-09-05T09:53:30.390
+Unexpected IOException with stream: <<<
+
+
+# Created at 2022-09-05T09:53:30.464
+Unexpected IOException with stream: 
+HTML report: (paste into browser to view) | Karate version: 1.2.0
+file:///C:/Users/ChristinaHadjizorzi/eclipse-workspace-ide/karateframework/target/karate-reports/karate-summary.html
+===================================================================
+
+
+
+# Created at 2022-09-05T09:53:30.467
+Unexpected IOException with stream: Total Feature => 29
+
+
+# Created at 2022-09-05T09:53:30.472
+Unexpected IOException with stream: Total Scenarion => 87
+
+
+# Created at 2022-09-05T09:53:30.474
+Unexpected IOException with stream: Passed Scenarios => 69
+
+
+# Created at 2022-09-05T09:53:30.767
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.configuration.createJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.781
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.configuration.getGlobalConfig.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.792
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.configuration.getRequest.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.803
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.createJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.814
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.createJobEntryWithVariables.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.829
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.deleterequest.deleteJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.844
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.getRequest.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.857
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.getRequest2.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.867
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.ignore.getRequest.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.886
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.jsonPathExpression.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.898
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.queryparameters.queryParameter.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.918
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.responseMatcher.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.931
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.validateJSONArray.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.944
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.validateXMLResponse.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.955
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.ValidationUsingFile.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.962
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.getrequest.Variables.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.977
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.patchrequest.updateJobDescritpion.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:30.991
+Unexpected IOException with stream: Sep 05, 2022 9:53:30 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.postrequest.createJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.010
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.postrequest.datadriven.postDataDriven.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.020
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.postrequest.fileUpload.fileUpload.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.029
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.postrequest.javaScriptExecutor.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.042
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.postrequest.schemaValidation.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.055
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.putrequest.updateJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.063
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.secure.getrequest.secureGetRequest.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.074
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.secure.getrequest.secureGetWithJWTToken.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.086
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.tags.createJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.095
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.tags.deleteJobEntry.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.106
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.tags.queryParameter.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:31.115
+Unexpected IOException with stream: Sep 05, 2022 9:53:31 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\ChristinaHadjizorzi\eclipse-workspace-ide\karateframework\target\karate-reports\com.api.automation.tags.updateJobDescritpion.json' contains 1 features
+
+
+# Created at 2022-09-05T09:53:32.824
+Unexpected IOException: 8,1,com.api.automation.ParallelBuilderWithCucumberReport,executeKarateTest,null,There are Some Failed Scenarios ==> expected: <0> but was: <18>,null,There are Some Failed Scenarios ==> expected: <0> but was: <18>,ParallelBuilderWithCucumberReport.executeKarateTest:34 There are Some Failed Scenarios ==> expected: <0> but was: <18>,org.opentest4j.AssertionFailedError: There are Some Failed Scenarios ==> expected: <0> but was: <18>\000A\0009at com.api.automation.ParallelBuilderWithCucumberReport.executeKarateTest(ParallelBuilderWithCucumberReport.java:34)\000A
+
+
+# Created at 2022-09-05T09:53:32.826
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.api.automation.ParallelBuilderWithCucumberReport,null,null,null
+
+
